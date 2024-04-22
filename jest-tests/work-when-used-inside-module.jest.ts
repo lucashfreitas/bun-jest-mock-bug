@@ -8,7 +8,7 @@ jest.mock("@aws-sdk/client-sqs", () => ({
   }),
 }));
 
-test("it doesn't work when I am using the mocked module in another file", async () => {
+test("different than bun, it works when I am using the mocked module in another file", async () => {
   const mains = await main();
   expect(mains).toBe("s");
 });
