@@ -1,0 +1,20 @@
+{
+  "name": "bun-jest-mock-bug",
+  "module": "index.ts",
+  "scripts": {
+    "bun:test": "bun test",
+    "jest:test": "pnpm jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "@types/bun": "latest",
+    "@types/jest": "^29.5.12"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.556.0"
+  }
+}
